@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="myvendor_routingsamplemodule" translate="label" sortOrder="45">
+            <label>Routing Sample Module</label>
+        </tab>
+        <section id="routingsamplemodule" translate="label" type="text" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10">
+        	<class>separator-top</class>
+            <label>Routing Confguration</label>
+            <tab>myvendor_routingsamplemodule</tab>
+            <resource>Magento_Cms::config_cms</resource>
+
+            <group id="general" translate="label" type="text" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10">
+            	<label>General Configuration</label>
+
+            	<field id="link_url" translate="label" type="text" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10">
+                    <label>Link URL</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
